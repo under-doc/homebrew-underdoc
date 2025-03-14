@@ -33,11 +33,6 @@ class Underdoc < Formula
         url "https://files.pythonhosted.org/packages/df/db/f35a00659bc03fec321ba8bce9420de607a1d37f8342eee1863174c69557/typing_extensions-4.12.2.tar.gz"
         sha256 "1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8"
     end
-
-    resource "pydantic_core" do
-        url "https://files.pythonhosted.org/packages/df/ce/f4c0e43c788ebb10a8b107c9774169091a0b8b3a62b3f76ca528d1e79bf0/pydantic_core-2.31.1.tar.gz"
-        sha256 "a9cc2f56cba2b78b487325ff3de016a70670b615eaf00cad88cb17f271e01971"
-    end
     
     def install
         virtualenv_install_with_resources
