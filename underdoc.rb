@@ -3,8 +3,8 @@ class Underdoc < Formula
 
     desc "CLI for interacting with Underdoc API"
     homepage "https://underdoc.io" # Your project's homepage
-    url "https://github.com/under-doc/underdoc-cli/archive/refs/tags/0.1.0.tar.gz" # Replace with your release URL
-    sha256 "31eb239443e5e98e63203ceffd07144510f003268333a8c3ed2cb1c000435bb1" # Generate using shasum -a 256 <your-archive.tar.gz>
+    url "https://github.com/under-doc/underdoc-cli/archive/refs/tags/0.2.0.tar.gz" # Replace with your release URL
+    sha256 "5d9719d82dd6703088bfa05d9987fed883d8dc803321bc9592e27ec5b4ab934a" # Generate using shasum -a 256 <your-archive.tar.gz>
     license "MIT" # Replace with your license
   
     depends_on "python@3.12" # Or your preferred Python version
@@ -17,11 +17,6 @@ class Underdoc < Formula
     resource "httpx" do
         url "https://files.pythonhosted.org/packages/b1/df/48c586a5fe32a0f01324ee087459e112ebb7224f646c0b5023f5e79e9956/httpx-0.28.1.tar.gz"
         sha256 "75e98c5f16b0f35b567856f597f06ff2270a374470a5c2392242528e3e3e42fc"
-    end
-
-    resource "pydantic" do
-        url "https://files.pythonhosted.org/packages/b7/ae/d5220c5c52b158b1de7ca89fc5edb72f304a70a4c540c84c8844bf4008de/pydantic-2.10.6.tar.gz"
-        sha256 "ca5daa827cce33de7a42be142548b0096bf05a7e7b365aebfa5f8eeec7128236"
     end
 
     resource "idna" do
